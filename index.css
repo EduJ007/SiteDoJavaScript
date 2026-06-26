@@ -1,0 +1,30 @@
+body {
+    background-color: white; 
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Evita que os botões criem barras de rolagem ao bater nas bordas */
+    width: 100vw;
+    height: 100vh;
+}
+
+h1 {
+    position: absolute; /* OBRIGATÓRIO: Permite que o JS mova o elemento na tela */
+    background-color: green; 
+    color: white;
+    cursor: pointer; 
+    user-select: none; 
+    padding: 10px 25px; 
+    border-radius: 5px; 
+    text-align: center;
+    margin: 0;
+    width: 25px;
+    /* Tiramos o 'transform' do transition para não bugar o movimento do JS */
+    transition: background-color 0.1s ease; 
+}
+h1.selecionado {
+    background-color: red;
+}
+.labeldobriquedo {
+    color: black;
+}
